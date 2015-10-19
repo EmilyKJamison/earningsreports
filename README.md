@@ -17,12 +17,12 @@ formats.  We focus on extracting data from these summary reports.
 
 ### Approach
 
-We would like to extract relations (such as <i>quote(WMTCEO, "Our performance exceeded expectations.")<\i> )
+We would like to extract relations (such as *quote(WMTCEO, "Our performance exceeded expectations.")* )
 from these summaries.  However, the summaries contain a mix of earnings tables, quotes from
 persons, phrases stating the positions of a person, graphics, analysis of earnings performance,
 product development descriptions, etc.  We could approach relation extraction using supervised 
 learned Hearst(1992)-style phrases, such as learning that the pattern "NAME NAME, NOUN and ADJ NOUN"
-should be extracted as <i>jobtitle(NAME NAME, NOUN)</i> and <i>jobtitle(NAME NAME, ADJ NOUN)</i>.
+should be extracted as *jobtitle(NAME NAME, NOUN)* and *jobtitle(NAME NAME, ADJ NOUN)*.
 However, this method runs that risk that noisy data, such as a mis-parsed table, could 
 lower the precision.
 
